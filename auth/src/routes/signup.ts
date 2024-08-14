@@ -41,7 +41,7 @@ router.post(
         id: user.id,
         email: user.email,
       },
-      "whfio"
+      process.env.JWT_KEY!      
     );
 
     // Store it on session object
